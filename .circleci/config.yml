@@ -29,9 +29,5 @@ jobs:
       - checkout
 
       - run:
-        name: List tasks
-        command: gradle task --all
-
-      - run:
         name: Build & Test
         command: gradle build
