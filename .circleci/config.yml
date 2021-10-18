@@ -37,7 +37,7 @@ jobs:
           command: gradle bootRun
           background: true
 
-      - run: sleep 90
+      - run: sleep 15
       - run:
           name: Test Connection
           command: |
