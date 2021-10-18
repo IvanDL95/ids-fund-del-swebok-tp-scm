@@ -28,8 +28,10 @@ jobs:
     steps:
       - checkout
 
-      - run: gradle build
+      - run:
+        name: List tasks
+        command: gradle task --all
 
-      - run: gradle test
-
-      - run: gradle bootRun
+      - run:
+        name: Build & Test
+        command: gradle build
