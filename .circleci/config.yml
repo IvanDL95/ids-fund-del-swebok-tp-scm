@@ -37,8 +37,8 @@ jobs:
           command: gradle bootRun
           background: true
 
+      - run: sleep 90
       - run:
           name: Test Connection
           command: |
-            sleep 6
             curl --retry-delay 5 --retry 10  --retry-connrefused http://localhost:8080
